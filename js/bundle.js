@@ -796,6 +796,21 @@ const modalTimerId = setTimeout(()=> (0,_modules_modal__WEBPACK_IMPORTED_MODULE_
     });           
 
 });
+
+
+let c = 4;
+function addX(x) {
+  return function(n) {
+     return n + x
+  }
+}
+ 
+const addThree = addX(3);
+ 
+let d = addThree(c);
+let res = addThree(c);
+ 
+console.log(res)
 })();
 
 /******/ })()

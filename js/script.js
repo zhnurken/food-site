@@ -29,3 +29,18 @@ const modalTimerId = setTimeout(()=> openModal('.modal', modalTimerId), 300000);
     });           
 
 });
+
+
+let c = 4;
+function addX(x) {
+  return function(n) {
+     return n + x
+  }
+}
+ 
+const addThree = addX(3);
+ 
+let d = addThree(c);
+let res = addThree(c);
+ 
+console.log(res)
